@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'VT323', monospace;
+  color: #d0d0d0;
+  background: #000 url('background.jpg') center/cover no-repeat fixed;
+  background-blend-mode: multiply;
+}
+
+/* HEADER */
+#page-header {
+  position: relative;
+  height: 180px;
+  background: url('header.jpg') center/cover no-repeat;
+  filter: brightness(0.4) contrast(1.1);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+}
+#page-header h1 {
+  position: relative;
+  z-index: 2;
+  color: #8cf;
+  font-size: 28px;
+  text-shadow: 0 0 6px #08f;
+  margin-bottom: 20px;
+}
+#page-header .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+/* GRID */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 15px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* BOXES */
+.box {
+  background: rgba(10,10,20,0.75);
+  border: 1px solid #333;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px #001122;
+}
+.box h2 {
+  border-bottom: 1px solid #222;
+  color: #9cf;
+  font-size: 18px;
+  margin-top: 0;
+  padding-bottom: 4px;
+}
+.box a {
+  color: #7df;
+  text-decoration: none;
+}
+.box a:hover { text-decoration: underline; color: #fff; }
+
+/* PROFILE */
+.photo {
+  width: 100%;
+  border: 1px solid #333;
+  margin-bottom: 10px;
+  filter: grayscale(80%);
+}
+.online { color: #3f6; }
+
+/* MUSIC PLAYER */
+.player-ui {
+  background: #000;
+  border: 1px solid #333;
+  padding: 8px;
+  font-size: 14px;
+  color: #9cf;
+  text-align: center;
+}
+
+/* EMBED ELEMENTS */
+embed, iframe {
+  width: 100%;
+  height: 380px;
+  background: #000;
+  border: none;
+}
+
+/* PHOTOS */
+.photos img {
+  width: 48%;
+  margin: 1%;
+  border: 1px solid #333;
+  filter: grayscale(80%);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #888;
+  font-size: 14px;
+  border-top: 1px solid #222;
+  background: rgba(0,0,0,0.8);
+  margin-top: 30px;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-thumb { background: #333; }
+::-webkit-scrollbar-track { background: #000; }
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+  .main-grid { grid-template-columns: 1fr; }
+}
