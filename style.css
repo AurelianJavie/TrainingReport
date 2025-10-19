@@ -5,7 +5,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'VT323', monospace;
-  background: url('background.jpg') center/cover no-repeat fixed;
+  background: url('background2.gif') center/cover no-repeat fixed;
   background-blend-mode: multiply;
 }
 
