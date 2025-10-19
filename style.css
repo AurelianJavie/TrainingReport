@@ -27,6 +27,9 @@ html, body {
   background: rgba(0,0,0,0.2);
 }
 
+h1 {
+  color: rgb(233, 150, 122);
+}
 /* GRID */
 .main-grid {
   display: grid;
@@ -47,7 +50,7 @@ html, body {
 }
 .box h2 {
   border-bottom: 1px solid #222;
-  color: #9cf;
+  color: rgb(223, 150, 122);
   font-size: 18px;
   margin-top: 0;
   padding-bottom: 4px;
