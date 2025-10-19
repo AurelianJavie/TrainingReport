@@ -14,7 +14,7 @@ html, body {
 #page-header {
   position: relative;
   height: 180px;
-  background: url('header.jpg') center/cover no-repeat;
+  background: url('download.gif') center/cover no-repeat;
   filter: brightness(0.4) contrast(1.1);
   display: flex;
   align-items: flex-end;
