@@ -6,7 +6,7 @@ html, body {
   padding: 0;
   font-family: 'VT323', monospace;
   color: #d0d0d0;
-  background: #000 url('background.jpg') center/cover no-repeat fixed;
+  background: url('background.jpg') center/cover no-repeat fixed;
   background-blend-mode: multiply;
 }
 
