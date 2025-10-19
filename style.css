@@ -5,8 +5,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'VT323', monospace;
-  color: #d0d0d0;
-  background: #000 url('background.jpg') center/cover no-repeat fixed;
+  background: url('background.jpg') center/cover no-repeat fixed;
   background-blend-mode: multiply;
 }
 
@@ -21,18 +20,11 @@ html, body {
   justify-content: center;
   text-align: center;
 }
-#page-header h1 {
-  position: relative;
-  z-index: 2;
-  color: #8cf;
-  font-size: 28px;
-  text-shadow: 0 0 6px #08f;
-  margin-bottom: 20px;
-}
+
 #page-header .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0,0,0,0.2);
 }
 
 /* GRID */
