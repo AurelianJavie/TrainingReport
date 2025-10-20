@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // --- LEAVES FALLING EFFECT ---
 document.addEventListener('DOMContentLoaded', () => {
   const leafContainer = document.getElementById('leaves-container');
-  const leafCount = 20; // 🌿 adjust this value for intensity (e.g., 10 = fewer, 50 = heavy fall)
+  const leafCount = 15; // 🌿 adjust this value for intensity (e.g., 10 = fewer, 50 = heavy fall)
 
   for (let i = 0; i < leafCount; i++) {
     const leaf = document.createElement('div');
