@@ -30,6 +30,10 @@ html, body {
 h1 {
   color: rgb(233, 150, 122);
 }
+
+p {
+  color:burlywood
+}
 /* GRID */
 .main-grid {
   display: grid;
@@ -179,7 +183,7 @@ footer {
 
 .diary-btn {
   background: #000;
-  color: #9cf;
+  color:crimson;
   border: 1px solid #333;
   padding: 5px 10px;
   font-family: 'VT323', monospace;
@@ -195,6 +199,6 @@ footer {
 .diary-btn.active {
   background: #004;
   color: #fff;
-  border-color: #09f;
+  border-color:crimson;
 }
 
