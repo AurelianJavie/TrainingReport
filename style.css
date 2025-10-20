@@ -168,3 +168,33 @@ footer {
     transform: translateY(110vh) rotate(360deg);
   }
 }
+
+/* Diary Buttons */
+.diary-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.diary-btn {
+  background: #000;
+  color: #9cf;
+  border: 1px solid #333;
+  padding: 5px 10px;
+  font-family: 'VT323', monospace;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.diary-btn:hover {
+  background: #111;
+  color: #fff;
+}
+
+.diary-btn.active {
+  background: #004;
+  color: #fff;
+  border-color: #09f;
+}
+

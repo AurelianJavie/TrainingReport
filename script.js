@@ -19,3 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
     leafContainer.appendChild(leaf);
   }
 });
+// --- Diary switcher ---
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.diary-btn');
+  const viewer = document.getElementById('diary-viewer');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Remove active state from all
+      buttons.forEach(b => b.classList.remove('active'));
+      // Set active
+      btn.classList.add('active');
+      // Load PDF
+      viewer.src = btn.getAttribute('data-src');
+    });
+  });
+
+  // Optional: highlight first button on load
+  if (buttons.length > 0) buttons[0].classList.add('active');
+});
